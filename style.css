@@ -22,6 +22,7 @@ header {
   height: 15vh;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 
 .navbar {
@@ -50,7 +51,7 @@ header {
 }
 
 .fa-bars {
-  color: #ff4442;
+  color: #f42;
 }
 
 .fa-search {
@@ -107,7 +108,7 @@ main {
 /* Latest News */
 
 .latest-news h2 {
-  color: #ff4422;
+  color: #f42;
 }
 
 .latest-container {
@@ -137,4 +138,51 @@ main {
   margin-top: 8px;
   color: #aaa;
   font-size: 12px;
+}
+
+/* Funding */
+
+.funding-rounds {
+  margin: 1% 2%;
+  background-color: goldenrod;
+  line-height: 1.7;
+}
+
+.funding-title h2 {
+  color: #f42;
+}
+.funding-links a {
+  display: block;
+  text-decoration: none;
+  color: #f42;
+}
+
+.bank-box {
+  width: 300px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.bank-box img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 13px;
+  left: 5px;
+}
+
+.bank-name {
+  width: 100%;
+  background-color: #f42;
+  color: white;
+  padding: 8px 10px 8px 80px;
+}
+
+.bank-cash {
+  background-color: #ffebe7;
+  padding-left: 80px;
+}
+
+.bank-box-items {
+  margin: 5px;
 }
