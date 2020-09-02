@@ -1,8 +1,8 @@
 /* General */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .flex {
@@ -11,10 +11,18 @@ box-sizing: border-box;
 
 /* Header */
 
+header {
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  top: 0;
+  left: 0;
+}
+
 .navbar {
-  margin: 0;
   justify-content: space-between;
-  height: 13vh;
+  background-color: black;
+  height: 90%;
 }
 
 .navbar img {
@@ -40,7 +48,19 @@ box-sizing: border-box;
   color: #ff4442;
 }
 
-.fa-search
-{
+.fa-search {
   color: #bdbdbd;
+}
+
+.promo-banner {
+  background-color: #fd3;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+/* Main */
+
+main {
+  margin-top: 26vh;
+  background: green;
 }
