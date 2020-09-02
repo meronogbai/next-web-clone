@@ -1,0 +1,46 @@
+/* General */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header */
+
+.navbar {
+  margin: 0;
+  justify-content: space-between;
+  height: 13vh;
+}
+
+.navbar img {
+  height: 100%;
+}
+
+.nav-icons {
+  width: 40%;
+}
+
+.nav-icon {
+  border-left: 1px solid #eaeaea;
+  margin: 0 10%;
+  height: 100%;
+  align-items: center;
+}
+.navbar i {
+  padding: 25% 0 0 30%;
+  margin: 0 5%;
+}
+
+.fa-bars {
+  color: #ff4442;
+}
+
+.fa-search
+{
+  color: #bdbdbd;
+}
