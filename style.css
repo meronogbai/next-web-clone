@@ -186,3 +186,69 @@ main {
 .bank-box-items {
   margin: 5px;
 }
+
+/* Categories (Hard Fork, Tech etc) */
+
+.category {
+  width: 280px;
+  margin: 1% auto;
+}
+
+.top-story{
+  background: transparent url('images/top-story-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 280px;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 0 3% 3%;
+  color: #fff;
+}
+
+
+.top-story h2{
+  font-size: 20px;
+  width: 100%;
+}
+
+.top-story p{
+  margin-top: 2%;
+  font-size: 12px;
+  width: 100%;
+}
+
+.category h3 {
+  color: #f42;
+  font-size: 28px;
+}
+
+.side-story {
+font-size: 14px;
+justify-content: center;
+align-items: center;
+color: #f42;
+padding: 5% 0 0 6%;
+}
+
+.side-story-title {
+  font-weight: bold;
+}
+
+
+.side-story img {
+  width: 96px;
+  height: 96px;
+}
+
+.story-list {
+  list-style-position: outside;
+  margin-left: 6%;
+  font-size: 13px;
+  color: #aaa;
+}
+.story-list li {
+  padding-top: 2%;
+}
