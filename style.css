@@ -18,7 +18,6 @@ html {
   width: 100%;
 }
 /* Header */
-
 header {
   position: fixed;
   width: 100%;
@@ -63,20 +62,15 @@ header {
   white-space: nowrap;
   overflow: hidden;
 }
-
 /* Main */
-
 main {
   margin: 108px 3% 0;
 }
 
-
 main section:not(.head-articles) {
   margin: 0 4%;
 }
-
 /* Head Articles */
-
 .head-articles {
   padding-top: 10px;
   width: 100%;
@@ -85,33 +79,29 @@ main section:not(.head-articles) {
   grid-gap: 10px;
 }
 
+.head-article {
+  width: 100%;
+  padding: 14px 12px;
+  /* width: 9 */
+  color: white;
+}
+
 .article-1 {
-  background: rgba(0, 0, 0, 0.25) url("images/head-news-1.png");
+  background: rgba(0, 0, 0, 0.25) url("images/head-news-1.png") bottom no-repeat;
 }
 
 .article-2 {
-  background-image: url("images/head-news-2.jpg");
+  background: rgba(0, 0, 0, 0.25) url("images/head-news-2.jpg") bottom no-repeat;
 }
 
 .article-3 {
-  background-image: url("images/head-news-3.jpg");
-}
-
-.head-article {
-  margin: 0 auto;
-  /* width: 9 */
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background: rgba(0, 0, 0, 0.25) url("images/head-news-3.jpg") bottom no-repeat;
 }
 
 .head-article p {
   color: #a0a4a8;
 }
-
 /* Latest News */
-
 .latest-news {
   margin-top: 66px !important;
 }
@@ -122,13 +112,12 @@ main section:not(.head-articles) {
 
 .latest-container {
   background-color: yellow;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 5px;
 }
 
 .news {
   background-color: red;
-  justify-content: space-around;
 }
 
 .news img {
@@ -142,15 +131,15 @@ main section:not(.head-articles) {
   text-decoration: none;
   font-weight: bold;
 }
+
 .news p {
   margin-top: 8px;
   color: #aaa;
   font-size: 12px;
 }
-
 /* Funding */
-
 .funding-rounds {
+  flex-direction: column;
   background-color: goldenrod;
   line-height: 1.7;
   padding-top: 40px;
@@ -159,14 +148,21 @@ main section:not(.head-articles) {
 .funding-title h2 {
   color: #f42;
 }
+
 .funding-links a {
   display: block;
   text-decoration: none;
   color: #f42;
 }
 
+.funding-banks {
+  flex-direction: column;
+}
+
 .bank {
-  width: 276px;
+  width: 100%;
+  padding: 10px;
+
 }
 
 .bank-box {
@@ -198,12 +194,11 @@ main section:not(.head-articles) {
 .bank-box-items {
   margin: 5px;
 }
-
 /* Categories (Hard Fork, Tech etc) */
-
 .categories {
   padding-top: 30px;
 }
+
 .category {
   width: 280px;
   padding-top: 10px;
@@ -264,16 +259,13 @@ main section:not(.head-articles) {
 .story-list li {
   padding: 4% 0;
   border-bottom: 1px solid #eee;
-
 }
 
 .story-list li::before {
   content: "•";
   color: #f42;
 }
-
 /* Latest deals */
-
 .latest-deals {
   padding-top: 35px;
 }
@@ -281,6 +273,7 @@ main section:not(.head-articles) {
 .latest-deal {
   margin: 5px 0;
 }
+
 .latest-deal img {
   width: 75px;
   height: 75px;
@@ -310,22 +303,22 @@ main section:not(.head-articles) {
 .deal-disc p:not(.price) {
   font-weight: bold;
 }
+
 .price {
   color: #aaa;
   font-size: 14px;
 }
+
 .old-price {
   font-size: 12px;
   text-decoration: line-through;
 }
-
 /* Footer */
-
 footer {
   margin-top: 60px;
 }
 
-.top-footer{
+.top-footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -333,14 +326,12 @@ footer {
   padding: 2.5em 20px;
   text-align: center;
 }
-
 /* Social Media */
-
 .social-media {
   margin-bottom: 26px;
 }
 
-.social-media button{
+.social-media button {
   height: 40px;
   width: 40px;
   background-color: #323232;
@@ -348,21 +339,17 @@ footer {
   border: none;
 }
 
-.social-media i{
+.social-media i {
   color: #fff;
 }
-
 /* Footer Links */
-
-.footer-links a{
+.footer-links a {
   text-decoration: none;
-  color:#9e9e9e;
+  color: #9e9e9e;
   font-size: 13px;
   text-align: center;
 }
-
 /* Copyright */
-
 .copyright {
   font-size: 13px;
   flex-wrap: wrap;
@@ -370,12 +357,11 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 2.5em 20px;
-
 }
 
 #tnw-footer-img {
-height: 8.99px;
-width: 37.88px;
+  height: 8.99px;
+  width: 37.88px;
 }
 
 #stackpath-footer-img {
@@ -385,4 +371,26 @@ width: 37.88px;
 
 .no-small {
   display: none;
+}
+
+/* Media Query >320px */
+@media (min-width:321px) {
+  .no-small {
+    display: initial;
+  }
+}
+/* Media Query >766px */
+
+@media (min-width:767px) {
+  .latest-container {
+    grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
+  }
+
+  .bank {
+    width: 228px;
+  }
+
+  .funding-banks {
+    flex-direction: row;
+  }
 }
