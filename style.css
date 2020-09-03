@@ -14,6 +14,9 @@
   display: grid;
 }
 
+html {
+  width: 100%;
+}
 /* Header */
 
 header {
@@ -64,12 +67,18 @@ header {
 /* Main */
 
 main {
-  margin-top: 108px;
+  margin: 108px 3% 0;
+}
+
+
+main section:not(.head-articles) {
+  margin: 0 4%;
 }
 
 /* Head Articles */
 
 .head-articles {
+  padding-top: 10px;
   width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -90,7 +99,7 @@ main {
 
 .head-article {
   margin: 0 auto;
-  width: 95%;
+  /* width: 9 */
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -102,6 +111,10 @@ main {
 }
 
 /* Latest News */
+
+.latest-news {
+  margin-top: 66px !important;
+}
 
 .latest-news h2 {
   color: #f42;
@@ -116,7 +129,6 @@ main {
 .news {
   background-color: red;
   justify-content: space-around;
-  margin: 1% 2%;
 }
 
 .news img {
@@ -139,9 +151,9 @@ main {
 /* Funding */
 
 .funding-rounds {
-  margin: 1% 2%;
   background-color: goldenrod;
   line-height: 1.7;
+  padding-top: 40px;
 }
 
 .funding-title h2 {
@@ -153,10 +165,14 @@ main {
   color: #f42;
 }
 
+.bank {
+  width: 276px;
+}
+
 .bank-box {
-  width: 300px;
+  width: 100%;
   position: relative;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 .bank-box img {
@@ -185,9 +201,12 @@ main {
 
 /* Categories (Hard Fork, Tech etc) */
 
+.categories {
+  padding-top: 30px;
+}
 .category {
   width: 280px;
-  margin: 1% auto;
+  padding-top: 10px;
 }
 
 .top-story {
@@ -195,8 +214,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 210px;
-  width: 280px;
-
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -225,7 +242,7 @@ main {
   justify-content: center;
   align-items: center;
   color: #f42;
-  padding: 5% 0 0 6%;
+  background-color: #f2e7e5;
 }
 
 .side-story-title {
@@ -239,25 +256,34 @@ main {
 
 .story-list {
   list-style-position: outside;
-  margin-left: 6%;
   font-size: 13px;
   color: #aaa;
+  list-style: none;
 }
 
 .story-list li {
-  padding-top: 2%;
+  padding: 4% 0;
+  border-bottom: 1px solid #eee;
+
+}
+
+.story-list li::before {
+  content: "•";
+  color: #f42;
 }
 
 /* Latest deals */
 
 .latest-deals {
-  margin: 1% 4%;
+  padding-top: 35px;
 }
 
+.latest-deal {
+  margin: 5px 0;
+}
 .latest-deal img {
   width: 75px;
   height: 75px;
-  margin: 5px;
 }
 
 .deals-title {
@@ -294,6 +320,10 @@ main {
 }
 
 /* Footer */
+
+footer {
+  margin-top: 60px;
+}
 
 .top-footer{
   flex-direction: column;
