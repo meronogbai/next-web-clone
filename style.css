@@ -26,7 +26,7 @@ header {
 }
 
 .navbar {
-  justify-content: space-between;
+
   background: linear-gradient(#fff, #f6f6f6);
 }
 
@@ -34,8 +34,15 @@ header {
   height: 48px;
 }
 
-.nav-icon {
+.nav-black-links, .nav-bottom-links {
+  display: none;
+}
+
+.nav-bottom-links {
   background: linear-gradient(#fff, #f6f6f6);
+}
+
+.nav-icon {
   border-style: none;
   border-left: 1px solid #eaeaea;
   width: 50px;
@@ -380,9 +387,36 @@ footer {
     display: initial;
   }
 }
-/* Media Query >766px */
+/* Media Query >767px */
 
-@media (min-width:767px) {
+@media (min-width:768px) {
+  
+  .nav-black-links, .nav-bottom-links {
+    display: initial;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .nav-black-links {
+    background-color: #131313;
+    justify-content: space-between;
+  }
+
+  .nav-links ul {
+    list-style: none;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  
+  .hamburger {
+    display: none;
+  }
   .latest-container {
     grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
   }
@@ -394,4 +428,7 @@ footer {
   .funding-banks {
     flex-direction: row;
   }
+
+
 }
+
