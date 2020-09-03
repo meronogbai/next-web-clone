@@ -19,35 +19,25 @@
 header {
   position: fixed;
   width: 100%;
-  height: 15vh;
   top: 0;
-  left: 0;
   z-index: 9999;
 }
 
 .navbar {
   justify-content: space-between;
-  background-color: black;
-  height: 90%;
+  background: linear-gradient(#fff, #f6f6f6);
 }
 
 .navbar img {
-  height: 100%;
-}
-
-.nav-icons {
-  width: 40%;
+  height: 48px;
 }
 
 .nav-icon {
+  background: linear-gradient(#fff, #f6f6f6);
+  border-style: none;
   border-left: 1px solid #eaeaea;
-  margin: 0 10%;
-  height: 100%;
-  align-items: center;
-}
-.navbar i {
-  padding: 25% 0 0 30%;
-  margin: 0 5%;
+  width: 50px;
+  text-align: center;
 }
 
 .fa-bars {
@@ -61,13 +51,20 @@ header {
 .promo-banner {
   background-color: #fd3;
   width: 100%;
-  padding: 5px 10px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 12px;
+  padding: 0 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Main */
 
 main {
-  margin-top: 26vh;
+  margin-top: 29vh;
   background: green;
 }
 
