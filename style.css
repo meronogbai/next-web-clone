@@ -65,7 +65,6 @@ header {
 
 main {
   margin-top: 29vh;
-  background: green;
 }
 
 /* Head Articles */
@@ -191,8 +190,8 @@ main {
   margin: 1% auto;
 }
 
-.top-story{
-  background: transparent url('images/top-story-1.png');
+.top-story {
+  background: transparent url("images/top-story-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 210px;
@@ -205,13 +204,12 @@ main {
   color: #fff;
 }
 
-
-.top-story h2{
+.top-story h2 {
   font-size: 20px;
   width: 100%;
 }
 
-.top-story p{
+.top-story p {
   margin-top: 2%;
   font-size: 12px;
   width: 100%;
@@ -223,17 +221,16 @@ main {
 }
 
 .side-story {
-font-size: 14px;
-justify-content: center;
-align-items: center;
-color: #f42;
-padding: 5% 0 0 6%;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: #f42;
+  padding: 5% 0 0 6%;
 }
 
 .side-story-title {
   font-weight: bold;
 }
-
 
 .side-story img {
   width: 96px;
@@ -246,6 +243,25 @@ padding: 5% 0 0 6%;
   font-size: 13px;
   color: #aaa;
 }
+
 .story-list li {
   padding-top: 2%;
+}
+
+/* Latest deals */
+
+.latest-deals {
+  margin: 1% 4%;
+  background-color: goldenrod;
+}
+
+.deals-title {
+  color: #f42;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.deals-title a {
+  text-decoration: none;
+  color: #f42;
 }
