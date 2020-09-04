@@ -179,6 +179,10 @@ main {
   padding: 10px;
 }
 
+.hidden-bank {
+  display: none;
+}
+
 .bank-box {
   width: 100%;
   position: relative;
@@ -589,9 +593,8 @@ Media Query >1023px
 
   /* Banks/funding */
 
-  .funding-links a{
+  .funding-links a {
     display: inline-block;
-
   }
 
   .funding-links a:nth-child(2) {
@@ -614,6 +617,20 @@ Media Query >1023px
   }
 }
 
+/* ==============================
+  Media query >1024
+===================== */
+@media (min-width: 1025px) {
+  .hidden-bank {
+    display: initial;
+  }
+
+  .funding-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
 /* ==============================
   Media query >1113
 ================================= */
