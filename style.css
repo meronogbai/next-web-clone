@@ -45,6 +45,10 @@ header {
   align-items: center;
 }
 
+.time-limit {
+  display: none;
+}
+
 .nav-bottom-links,
 .nav-links ul {
   padding: 0 6px;
@@ -419,11 +423,11 @@ Media Query >767px
     justify-content: flex-start;
   }
 
-  .navbar img {
+  /* .navbar img {
     content: url("images/tnw-768.png");
     height: 80px;
     width: 108px;
-  }
+  } */
 
   .nav-links {
     width: 100%;
@@ -641,4 +645,29 @@ Media Query >1023px
     margin-left: auto;
     margin-right: auto;
   }
+  
+  .time-limit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .time-limit img {
+    display: initial;
+  }
+
+  .time-limit span {
+    font-size: 20px;
+    color: #f42;
+  }
+
+  .time-limit button {
+    color: white;
+    background: #00cccc;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 16px;
+  }
+
 }
