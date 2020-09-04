@@ -587,6 +587,20 @@ Media Query >1023px
     margin-top: 10px;
   }
 
+  /* Banks/funding */
+
+  .funding-links a{
+    display: inline-block;
+
+  }
+
+  .funding-links a:nth-child(2) {
+    border: 1px #f42;
+    border-style: none solid;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
   /* Categories */
 
   .categories {
