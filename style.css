@@ -124,7 +124,7 @@ main {
 }
 /* Latest News */
 .latest-news {
-  margin-top: 66px !important;
+  margin-top: 66px;
 }
 
 .latest-news h2 {
@@ -132,13 +132,8 @@ main {
 }
 
 .latest-container {
-  background-color: yellow;
   grid-template-columns: 1fr;
   grid-gap: 5px;
-}
-
-.news {
-  background-color: red;
 }
 
 .news img {
@@ -161,7 +156,6 @@ main {
 /* Funding */
 .funding-rounds {
   flex-direction: column;
-  background-color: goldenrod;
   line-height: 1.7;
   padding-top: 40px;
 }
@@ -347,7 +341,9 @@ footer {
   padding: 2.5em 20px;
   text-align: center;
 }
+
 /* Social Media */
+
 .social-media {
   margin-bottom: 26px;
 }
@@ -363,6 +359,7 @@ footer {
 .social-media i {
   color: #fff;
 }
+
 /* Footer Links */
 .footer-links a {
   text-decoration: none;
@@ -370,7 +367,9 @@ footer {
   font-size: 13px;
   text-align: center;
 }
+
 /* Copyright */
+
 .copyright {
   font-size: 13px;
   flex-wrap: wrap;
@@ -395,11 +394,13 @@ footer {
 }
 
 /* Media Query >320px */
+
 @media (min-width: 321px) {
   .no-small {
     display: initial;
   }
 }
+
 /* Media Query >767px */
 
 @media (min-width: 768px) {
@@ -464,19 +465,8 @@ footer {
   .hamburger {
     display: none;
   }
-  .latest-container {
-    grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
-  }
 
-  .bank {
-    width: 228px;
-  }
-
-  .funding-banks {
-    flex-direction: row;
-  }
-
-  /* Head Articles (>767px) */
+  /* Head Articles */
   main {
     margin: 140px 8px 0;
   }
@@ -489,5 +479,52 @@ footer {
 
   .article-1 {
     grid-row: 1 / span 2;
+  }
+
+  /* Latest News */
+
+  .latest-container {
+    grid-template-columns: repeat(3, minmax(229px, 568px));
+  }
+
+  .news {
+    flex-direction: column;
+  }
+  
+  .news img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 5px 0;
+  }
+
+  /* Banks */
+
+  .funding-banks {
+    flex-direction: row;
+  }
+
+  /* Categories */
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Latest deals */
+
+  .latest-deals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .latest-deal {
+    flex-direction: column;
+  }
+
+  .latest-deal img {
+    width: 100%;
+    height: auto;
   }
 }
