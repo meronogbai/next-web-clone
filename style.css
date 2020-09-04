@@ -523,7 +523,7 @@ Media Query >767px
 Media Query >1023px
 ========================================
 */
-@media (min-width:1023px) {
+@media (min-width: 1023px) {
   /* Header */
   .navbar img {
     display: none;
@@ -560,19 +560,15 @@ Media Query >1023px
     margin-top: 110px;
   }
 
-  /* .article-1{
-    background: rgba(0, 0, 0, 0.25) url("images/head-news-1.png") bottom no-repeat;
-    background: linear-gradient(to bottom, #f94009 0%,#ff420a 3%,#ff420a 34%,#ffc9b9 70%, transparent 100%), url('images/head-news-1.png');
-    background-position: 100%, 10% 10%, left top;
-    background-size: 100%, 50%, 100%;
+  .article-1{
+    background: linear-gradient(153deg, rgba(237,61,9,1) 59%, rgba(255,255,255,1) 100%), url('images/head-news-1.png'), url('images/tnw.svg');
+    background-position: 100%, bottom, 20px 20px;
+    background-size: 100%, 100%, 50%;
     background-repeat: no-repeat, no-repeat, no-repeat;
-  } */
-  .aritlce-1 {
-    
+    background-blend-mode: overlay;
   }
 
-  .article-1 h2{
-  font-size: 56px;
-}
-
+  .article-1 h2 {
+    font-size: 56px;
+  }
 }
