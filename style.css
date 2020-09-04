@@ -17,6 +17,7 @@
 html {
   width: 100%;
 }
+
 /* Common attributes */
 .fa-bars,
 .funding-links a,
@@ -25,6 +26,7 @@ html {
 .tnw-orange {
   color: #f42;
 }
+
 /* Header */
 header {
   position: fixed;
@@ -91,6 +93,7 @@ header {
   white-space: nowrap;
   overflow: hidden;
 }
+
 /* Main */
 main {
   margin: 108px 8px 0;
@@ -99,6 +102,7 @@ main {
 .m10 {
   margin: 0 8px;
 }
+
 /* Head Articles */
 .head-articles {
   padding-top: 10px;
@@ -132,6 +136,7 @@ main {
 .head-article p {
   color: #a0a4a8;
 }
+
 /* Latest News */
 .latest-news {
   margin-top: 66px;
@@ -160,6 +165,7 @@ main {
   color: #aaa;
   font-size: 12px;
 }
+
 /* Funding */
 .funding-rounds {
   flex-direction: column;
@@ -188,6 +194,7 @@ main {
 .bank-box {
   width: 100%;
   position: relative;
+
   /* margin: 10px 0; */
 }
 
@@ -214,6 +221,7 @@ main {
 .bank-box-items {
   margin: 5px;
 }
+
 /* Categories (Hard Fork, Tech etc) */
 .categories {
   padding-top: 30px;
@@ -285,6 +293,7 @@ main {
   content: "•";
   color: #f42;
 }
+
 /* Latest deals */
 .latest-deals {
   padding-top: 35px;
@@ -333,6 +342,7 @@ main {
   font-size: 12px;
   text-decoration: line-through;
 }
+
 /* Footer */
 footer {
   margin-top: 60px;
@@ -346,6 +356,7 @@ footer {
   padding: 2.5em 20px;
   text-align: center;
 }
+
 /* Social Media */
 .social-media {
   margin-bottom: 26px;
@@ -362,6 +373,7 @@ footer {
 .social-media i {
   color: #fff;
 }
+
 /* Footer Links */
 .footer-links a {
   text-decoration: none;
@@ -369,6 +381,7 @@ footer {
   font-size: 13px;
   text-align: center;
 }
+
 /* Copyright */
 .copyright {
   font-size: 13px;
@@ -392,6 +405,7 @@ footer {
 .no-small {
   display: none;
 }
+
 /*
 ========================================
 Media Query >320px
@@ -402,6 +416,7 @@ Media Query >320px
     display: initial;
   }
 }
+
 /*
 ========================================
 Media Query >767px
@@ -469,6 +484,7 @@ Media Query >767px
   .hamburger {
     display: none;
   }
+
   /* Head Articles */
   main {
     margin: 140px 8px 0;
@@ -494,6 +510,7 @@ Media Query >767px
   .article-1 h2 {
     font-size: 40px;
   }
+
   /* Latest News */
   .latest-container {
     grid-template-columns: repeat(3, minmax(229px, 568px));
@@ -508,16 +525,19 @@ Media Query >767px
     height: auto;
     margin: 0 0 5px;
   }
+
   /* Banks */
   .funding-banks {
     flex-direction: row;
   }
+
   /* Categories */
   .categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
+
   /* Latest deals */
   .latest-deals-container {
     display: grid;
@@ -534,6 +554,7 @@ Media Query >767px
     height: auto;
   }
 }
+
 /*
 ========================================
 Media Query >1023px
@@ -569,10 +590,12 @@ Media Query >1023px
     text-align: justify;
     padding: 0 0 0 20px;
   }
+
   /* Main */
   main {
     margin-top: 110px;
   }
+
   /* Head articles */
   .article-1 {
     background: linear-gradient(153deg, rgba(237, 61, 9, 1) 59%, rgba(255, 255, 255, 1) 100%), url("images/head-news-1.png"), url("images/tnw.svg");
@@ -585,12 +608,14 @@ Media Query >1023px
   .article-1 h2 {
     font-size: 56px;
   }
+
   /* Latest news */
   .latest-container {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
     margin-top: 10px;
   }
+
   /* Banks/funding */
   .funding-links a {
     display: inline-block;
@@ -602,15 +627,18 @@ Media Query >1023px
     padding: 0 10px;
     margin: 0 10px;
   }
+
   /* Categories */
   .categories {
     grid-template-columns: repeat(3, 1fr);
   }
+
   /* Latest deals */
   .latest-deals-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 /* ==============================
   Media query >1024
 ===================== */
@@ -625,6 +653,7 @@ Media Query >1023px
     align-items: baseline;
   }
 }
+
 /* ==============================
   Media query >1113
 ================================= */
